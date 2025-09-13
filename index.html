@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime list and view</title>
+    <!--Conexión a bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caprasimo">
+    <!--Conexión a la stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <!--Header con logo de la pagina, y un icono de avatar-->
-    <header>
-        <h1>
-            Logo
+    <header class="header">
+        <h1 class="logo">
+            Aniking
         </h1>
-        <button>
-            Make a watch party
-        </button>
-        <div class="avatar"></div>
-        <nav>
-            <h2>
-                animes
-            </h2>
-            <h2>
-                placeholder
-            </h2>
-            <h2>
-                placeholder
-            </h2>
-        </nav>
+        <div class="interactive-header">
+            <button class="watch-party">
+                <img class="broadcast-icon" src="./img/broadcast-icon.png" alt="">
+                Make a watch party
+            </button>
+            <nav>
+                <h2>
+                    New entries
+                </h2>
+                <span class="barra-intevalo"></span>
+                <h2>
+                    My animes
+                </h2>
+                <span class="barra-intevalo"></span>
+                <h2>
+                    Friends suggestions
+                </h2>
+            </nav>
+            <div class="avatar"></div>
+        </div>
     </header>
     
     <main>
         <!--primera division donde estan las tarjetas de cada anime-->
-        <section>
+        <section class="container">
             <!--section de animes que guardaste-->
-            <section>
+            <section class="row">
                 <h3>
                     Mis Animes
                 </h3>
                 <h4>
                     Completados/viendo/abandonados
                 </h4>
-                <div class="anime-card">
+                <div class="col-12 col-md-6 anime-card">
                     <div class="img-space">
                         <img class="card-img" src="./img/one piece.jpg" alt="">
                     </div>
@@ -55,7 +64,7 @@
                     </p>
                 </div>
             </section>
-        <!--animes de la temporada transcurriendo-->
+            <!--animes de la temporada transcurriendo-->
             <section>
                 <h3>
                     Nuevos animes
@@ -75,12 +84,12 @@
                     </p>
             </section>
         </section>
-       
+       <!--segunda division donde va a estar la lista de contactos-->
         <section class="friend-list">
             <h2>
                 Friends list
             </h2>
-            <!--segunda division donde va a estar la lista de contactos-->
+            
             <div>
                 <div class="friend">
                     <div class="friend-icon"></div>
@@ -107,5 +116,6 @@
             all rights reserved
         </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

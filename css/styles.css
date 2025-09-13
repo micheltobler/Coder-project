@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-
 .avatar, .friend-icon{
     margin: 5px;
     height: 50px;
     width: 50px;
-    background-color: rgb(176, 93, 158);
+    background-image: url("../img/avatar-img.png");
+    border: solid 3px rgb(182, 67, 147);
+    background-size: cover;
     border-radius: 50px;
 }
 
@@ -42,4 +43,51 @@
     width: 500px;
     background-color: blueviolet;
 }
+/*ediciones del header*/
+.header{
+    font-family: 'Caprasimo', serif;
+    color: white;
+    background-color: rgb(240, 135, 210);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+/*seccion derecha de la pantalla donde va el nav, avatar y boton de watch party*/
+.interactive-header{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+nav{
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    gap: 10px;
+}
+nav h2{
+    font-size: 20px;
+    
+}
 
+.watch-party{
+    padding: 0px 5px;
+    color: white;
+    background-color: rgb(255, 148, 223);
+    border: solid 3px rgb(182, 67, 147);
+    border-radius: 50px;
+}
+
+.watch-party:active{
+    background-color: rgb(182, 67, 147);
+
+}
+.barra-intevalo{
+    border: solid 2px white;
+    height: 3rem;
+    border-radius: 10px;
+}
+.broadcast-icon{
+    width: 10%;
+    height: 10%;
+}
