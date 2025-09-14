@@ -3,46 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.avatar, .friend-icon{
-    margin: 5px;
-    height: 50px;
-    width: 50px;
-    background-image: url("../img/avatar-img.png");
-    border: solid 3px rgb(182, 67, 147);
-    background-size: cover;
-    border-radius: 50px;
+main{
+    background-image: url('/img/bg-img.png');
 }
 
-.anime-card{
-    background-color: rgb(80, 80, 180);
-    margin: 10px;
-    width: 300px;
-    height: 500px;
-}
-
-.img-space{
-    background-color: aquamarine;
-    width: 300px;
-    height: 200px;
-}
-
-.card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-    
-
-.friend-list{
-    background-color: chocolate;
-    width: 500px;
-}
-
-.friend{
-    width: 500px;
-    background-color: blueviolet;
-}
 /*ediciones del header*/
 .header{
     font-family: 'Caprasimo', serif;
@@ -90,4 +54,36 @@ nav h2{
 .broadcast-icon{
     width: 10%;
     height: 10%;
+}
+
+
+.avatar, .friend-icon{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/avatar-img.png");
+    border: solid 3px rgb(182, 67, 147);
+    background-size: cover;
+    border-radius: 50px;
+}    
+/*edicion de las tarjetas*/
+.anime-card{
+    background-color: white;
+    margin: 20px;
+    border-radius:5%;
+    padding: 0;
+}
+.card-info{
+    padding: 10px;
+}
+.anime-img{
+    border-radius: 10px;
+}
+.friend-list{
+    background-color: chocolate;
+}
+
+.friend{
+    width: 500px;
+    background-color: blueviolet;
 }
