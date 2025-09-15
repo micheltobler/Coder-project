@@ -10,6 +10,9 @@
     <!--Conexión a la stylesheet-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
+
+
 <body>
 <!--Header con logo de la pagina, y un icono de avatar-->
     <header class="header">
@@ -36,61 +39,79 @@
             <div class="avatar"></div>
         </div>
     </header>
+
     
     <main class="container-fluid">
         <section class="row">
             <!--primera division donde estan las tarjetas de cada anime-->
             <section class="col-12 col-md-9">
+                <div class="busqueda-titulos">
+                    <div>
+                        <h3>
+                            Mis Animes
+                        </h3>
+                        <h4>
+                            Completados/viendo/abandonados
+                        </h4>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success color-font" type="submit">Search</button>
+                    </form>
+                </div>
+
+
+
                 <!--section de animes que guardaste-->
-                <section class="row">
-                    <h3>
-                        Mis Animes
-                    </h3>
-                    <h4>
-                        Completados/viendo/abandonados
-                    </h4>
-                            <div class="anime-card" style="width: 15rem;">
-                                <img src="/img/one piece.jpg" class="card-img-top  anime-img" alt="...">
-                                <div class="card-body card-info">
-                                    <h5 class="card-title">One piece</h5>
-                                    <p class="card-text">Genero: Aventura-Shonen</p>
-                                    <p class="card-text">Episodios: 1143(en emisión)</p>
-                                    <p class="card-text">Autor: Eichiro Oda</p>
-                                </div>
-                            </div>
-                            <div class="anime-card" style="width: 15rem;">
-                                <img src="/img/fmab.png" class="card-img-top  anime-img" alt="...">
-                                <div class="card-body card-info">
-                                    <h5 class="card-title">Fullmetal Alchemist: Brotherhood</h5>
-                                    <p class="card-text">Genero: Aventura-Shonen</p>
-                                    <p class="card-text">Episodios: 65</p>
-                                    <p class="card-text">Autor: Hiromu Arakawa </p>
-                                </div>
-                            </div>
-                            <div class="anime-card" style="width: 15rem;">
-                                <img src="/img/bluelock.png" class="card-img-top  anime-img" alt="...">
-                                <div class="card-body card-info">
-                                    <h5 class="card-title">Blue Lock</h5>
-                                    <p class="card-text">Genero: Deporte</p>
-                                    <p class="card-text">Episodios: 50</p>
-                                    <p class="card-text">Autor:  Muneyuki Kaneshiro</p>
-                                </div>
-                            </div>
-                            <div class="anime-card" style="width: 15rem;">
-                                <img src="/img/dragonball.png" class="card-img-top  anime-img" alt="...">
-                                <div class="card-body card-info">
-                                    <h5 class="card-title">Dragon Ball</h5>
-                                    <p class="card-text">Genero: Aventura-Shonen</p>
-                                    <p class="card-text">Episodios: 153</p>
-                                    <p class="card-text">Autor: Akira Toriyama</p>
-                                </div>
-                            </div>
+                <section class="row">                    
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="/img/one piece.jpg" class="card-img-top  anime-img" alt="...">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">One piece</h5>
+                            <p class="card-text">Genero: Aventura-Shonen</p>
+                            <p class="card-text">Episodios: 1143(en emisión)</p>
+                            <p class="card-text">Autor: Eichiro Oda</p>
+                        </div>
+                    </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="/img/fmab.png" class="card-img-top  anime-img" alt="...">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Fullmetal Alchemist: Brotherhood</h5>
+                            <p class="card-text">Genero: Aventura-Shonen</p>
+                            <p class="card-text">Episodios: 65</p>
+                            <p class="card-text">Autor: Hiromu Arakawa </p>
+                        </div>
+                    </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="/img/bluelock.png" class="card-img-top  anime-img" alt="...">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Blue Lock</h5>
+                            <p class="card-text">Genero: Deporte</p>
+                            <p class="card-text">Episodios: 50</p>
+                            <p class="card-text">Autor:  Muneyuki Kaneshiro</p>
+                        </div>
+                    </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="/img/dragonball.png" class="card-img-top  anime-img" alt="...">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Dragon Ball</h5>
+                            <p class="card-text">Genero: Aventura-Shonen</p>
+                            <p class="card-text">Episodios: 153</p>
+                            <p class="card-text">Autor: Akira Toriyama</p>
+                        </div>
+                    </div>
                 </section>
+
+
+
                 <!--animes de la temporada transcurriendo-->
                 <section class="row">
-                    <h3>
-                        Nuevos animes
-                    </h3>
+                    <div class="busqueda-titulos">
+                        <h3>
+                            Nuevos animes
+                        </h3>
+                    </div>
+                    
                     <div class="anime-card" style="width: 15rem;">
                         <img src="/img/dandadan.jpg" class="card-img-top  anime-img" alt="...">
                         <div class="card-body card-info">
@@ -129,34 +150,84 @@
                     </div>
                 </section>
             </section>
+
+
+
+
         <!--segunda division donde va a estar la lista de contactos-->
             <section class="friend-list col-3">
                 <section>
-                        <h2>
+                        <h2 class="list-title">
                             Friends list
                         </h2>                    
-                        <div>
+                        <div class="componentes-lista-amigos">
+
+                            <!--caja de usuario amigo-->
                             <div class="friend">
-                                <div class="friend-icon"></div>
-                                <button>
-                                    chat
-                                </button>
-                                <p>
-                                    Amigo
-                                </p>
-                                <p>
-                                    online
-                                </p>
+                                <div class="friend-info">
+                                    <div class="friend-icon"></div>
+                                    <p>
+                                        Amigo#0000
+                                    </p>
+                                    <div class="online"></div>
+                                </div>
+                                <div>
+                                    <button class="button-chat">
+                                        <img src="/img/chat icono.png" class="img-button" alt="">
+                                    </button>
+                                </div>                                
                             </div>
-                            <button>
-                                Agregar amigo
-                            </button>
+
+                            <br>
+                            
+                            <div class="friend">
+                                <div class="friend-info">
+                                    <div class="friend-icon"></div>
+                                    <p>
+                                        Amigo#0000
+                                    </p>
+                                    <div class="online"></div>
+                                </div>
+                                <div>
+                                    <button class="button-chat">
+                                        <img src="/img/chat icono.png" class="img-button" alt="">
+                                    </button>
+                                </div>                               
+                            </div>
+
+                            <br>
+                            
+                            <div class="friend">
+                                <div class="friend-info">
+                                    <div class="friend-icon"></div>
+                                    <p>
+                                        Amigo#0000
+                                    </p>
+                                    <div class="online"></div>
+                                </div>
+                                <div>
+                                    <button class="button-chat">
+                                        <img src="/img/chat icono.png" class="img-button" alt="">
+                                    </button>
+                                </div>                                
+                            
+                            </div>
+                            <div class="boton-amigos">
+                                <button class="agregar-amigo">
+                                    +
+                                </button>
+                            </div>
+
+                        </div>
                     </section>
                 </section>
             </section>
         </section>
         
     </main>
+
+
+
     <!--Footer con los derechos reservados en primera instancia-->
     <footer>
         <p>
