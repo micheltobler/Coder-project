@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 main{
-    background-image: url('/img/bg-img.png');
+    background-image: url('../img/bg-img.png');
 }
 
 /*ediciones del header*/
