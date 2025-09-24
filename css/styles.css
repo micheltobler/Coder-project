@@ -1,147 +1,153 @@
-*{
-    font-family: 'Caprasimo', serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-main{
-    background-image: url('../img/bg-img.png');
-}
-
+/*primero importar las variables para que entren en los otros imports*/
+/*luego importar las otras partes del proyecto*/
 /*ediciones del header*/
-.header{
-    color: white;
-    background-color: rgb(240, 135, 210);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
+.header {
+  color: white;
+  background-color: rgb(240, 135, 210);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  /*seccion derecha de la pantalla donde va el nav, avatar y boton de watch party*/
 }
-/*seccion derecha de la pantalla donde va el nav, avatar y boton de watch party*/
-.interactive-header{
-    display: flex;
-    align-items: center;
-    gap:10px;
+.header .interactive-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-nav{
-    display: flex;
-    align-items: end;
-    padding: 10px;
-    gap: 10px;
+.header .interactive-header .avatar {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/avatar-img.png");
+  border: solid 3px rgb(241, 76, 192);
+  background-size: cover;
+  border-radius: 50px;
 }
-nav h2{
-    font-size: 20px; 
+.header .interactive-header nav {
+  display: flex;
+  align-items: end;
+  padding: 10px;
+  gap: 10px;
 }
-
-.watch-party{
-    padding: 0px 5px;
-    color: white;
-    background-color: rgb(255, 148, 223);
-    border: solid 3px rgb(182, 67, 147);
-    border-radius: 50px;
+.header .interactive-header nav h2 {
+  font-size: 20px;
 }
-
-.watch-party:active{
-    background-color: rgb(182, 67, 147);
-
+.header .interactive-header .watch-party {
+  padding: 0px 5px;
+  color: white;
+  background-color: rgb(240, 135, 210);
+  border: solid 3px rgb(241, 76, 192);
+  border-radius: 50px;
 }
-.barra-intevalo{
-    border: solid 2px white;
-    height: 3rem;
-    border-radius: 10px;
+.header .interactive-header .watch-party:active {
+  background-color: rgb(241, 76, 192);
 }
-/**/
-.busqueda-titulos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: rgb(182, 67, 147);
-}
-
-/* estilos de la barra de busqueda*/
-.color-font{
-    color: rgb(182, 67, 147);
-    border: solid 1px rgb(240, 135, 210);
-}
-.color-font:hover{
-    background-color: rgb(182, 67, 147);
-    border: solid 1px rgb(240, 135, 210);
+.header .interactive-header .barra-intevalo {
+  border: solid 2px white;
+  height: 3rem;
+  border-radius: 10px;
 }
 
-.avatar, .friend-icon{
-    margin: 5px;
-    height: 50px;
-    width: 50px;
-    background-image: url("../img/avatar-img.png");
-    border: solid 3px rgb(182, 67, 147);
-    background-size: cover;
-    border-radius: 50px;
-}    
-/*edicion de las tarjetas*/
-.anime-card{
-    background-color: white;
-    margin: 20px;
-    border-radius:5%;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.card-info{
-    padding: 10px;
+* body {
+  font-family: "Caprasimo", serif;
 }
-.anime-img{
-    border-radius: 10px;
+* body main {
+  background-image: url("../img/bg-img.png");
+}
+* body main .busqueda-titulos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(241, 76, 192);
+}
+* body main {
+  /* estilos de la barra de busqueda*/
+}
+* body main .color-font {
+  color: rgb(216, 119, 187);
+  border: solid 1px rgb(240, 135, 210);
+}
+* body main .color-font:hover {
+  background-color: rgb(241, 76, 192);
+  border: solid 1px rgb(240, 135, 210);
+}
+* body main {
+  /*edicion de las tarjetas*/
+}
+* body main .anime-card {
+  background-color: white;
+  margin: 20px;
+  border-radius: 5%;
+  padding: 0;
+}
+* body main .card-info {
+  padding: 10px;
+}
+* body main .anime-img {
+  border-radius: 10px;
+}
+* body main {
+  /*estilos de la lista de amigos*/
+}
+* body main .friend-list {
+  background-color: rgb(216, 119, 187);
+}
+* body main .friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+* body main .friend-icon {
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/avatar-img.png");
+  border: solid 3px rgb(241, 76, 192);
+  background-size: cover;
+  border-radius: 50px;
+}
+* body main .friend-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+* body main .friend-info p {
+  margin: 0;
+}
+* body main .online {
+  background-color: greenyellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+* body main .agregar-amigo {
+  font-size: 3rem;
+  font-weight: bolder;
+  padding: 5px 50px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(182, 67, 147);
+  background-color: rgb(255, 148, 223);
+}
+* body main .button-chat {
+  border: solid 1px black;
+  background-color: rgb(255, 148, 223);
+  border-radius: 50px;
+  padding: 10px;
+}
+* body main .img-button {
+  width: 30px;
+}
+* body main .boton-amigos {
+  display: flex;
+  justify-content: center;
 }
 
-/*estilos de la lista de amigos*/
-.friend-list{
-    background-color: rgb(182, 67, 147);
-}
-
-.friend{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.friend-info{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.friend-info p{
-    margin: 0;
-}
-
-.online{
-    background-color: greenyellow;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-}
-.agregar-amigo{
-    font-size: 3rem;
-    font-weight: bolder;
-    padding: 5px 50px;
-    border: none;
-    border-radius: 10px;
-    color: rgb(182, 67, 147);
-    background-color: rgb(255, 148, 223);
-}
-
-.button-chat{
-    border: solid 1px black ;
-    background-color: rgb(255, 148, 223);
-    border-radius: 50px;
-    padding: 10px;
-}
-
-.img-button{
-    width: 30px;
-}
-
-.boton-amigos{
-    display: flex;
-    justify-content: center;
-}
-
+/*# sourceMappingURL=styles.css.map */
