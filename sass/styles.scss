@@ -22,6 +22,13 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                margin-top: 10px;
+                color: $secondary-color;
+            }
+            .categorias{
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
                 color: $secondary-color;
             }
 
@@ -36,18 +43,24 @@
             }
 
             /*edicion de las tarjetas*/
-            .anime-card{
-                background-color: white;
-                margin: 20px;
-                border-radius:5%;
-                padding: 0;
-                max-width: 100%;
-            }
-            .card-info{
-                padding: 10px;
-            }
-            .anime-img{
-                border-radius: 10px;
+            .cards-row{
+                display: flex;
+                justify-content: center;
+
+                .anime-card{
+                    background-color: white;
+                    margin: 20px;
+                    border-radius:5%;
+                    padding: 0;
+                    max-width: 100%;
+                            
+                    .card-info{
+                        padding: 10px;
+                    }
+                    .anime-img{
+                        border-radius: 10px;
+                    }
+                }
             }
 
             /*estilos de la lista de amigos*/

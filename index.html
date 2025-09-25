@@ -50,13 +50,13 @@
         <section class="row">
             <!--primera division donde estan las tarjetas de cada anime-->
             <section class="col-12 col-md-9">
-                <div class="busqueda-titulos">
-                    <div>
+                <div class="categorias">
+                    <div class="col-6 ">
                         <h3>
                             Mis Animes
                         </h3>
                     </div>
-                    <form class="d-flex" role="search">
+                    <form class="col-3 d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button class="btn btn-outline-success color-font" type="submit">Search</button>
                     </form>
@@ -65,7 +65,7 @@
 
 
                 <!--section de animes que guardaste-->
-                <section class="row">                    
+                <section class="row cards-row">                    
                     <div class="anime-card" style="width: 15rem;">
                         <img src="./img/one-piece.jpg" class="card-img-top  anime-img" alt="imagen de one piece">
                         <div class="card-body card-info">
@@ -107,12 +107,59 @@
 
 
                 <!--animes de la temporada transcurriendo-->
-                <section class="row">
-                    <div class="busqueda-titulos">
-                        <h3>
-                            Nuevos animes
-                        </h3>
+                <div class="col-5 categorias">
+                    <h3>
+                        Nuevos animes
+                    </h3>
+                </div>
+                <section class="row cards-row">
+                    
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="./img/dandadan.jpg" class="card-img-top  anime-img" alt="imagen de Dandadan">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Dandadan</h5>
+                            <p class="card-text">Genero: Aventura-Shonen</p>
+                            <p class="card-text">Episodios: 22(en emisión)</p>
+                            <p class="card-text">Autor: Yukinobu Tatsu</p>
+                        </div>
                     </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="./img/gachiakuta.png" class="card-img-top  anime-img" alt="imagen de Gachikuta">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">gachiakuta</h5>
+                            <p class="card-text">Genero: Aventura-Shonen</p>
+                            <p class="card-text">Episodios: 9(en emisión)</p>
+                            <p class="card-text">Autor: Kei Urana</p>
+                        </div>
+                    </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="./img/sonobrisque.png" class="card-img-top  anime-img" alt="imagen de Sono bisque doll">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Sono Bisque Doll wa Koi wo Suru</h5>
+                            <p class="card-text">Genero: Romance</p>
+                            <p class="card-text">Episodios: 23(en emisión)</p>
+                            <p class="card-text">Autor: Shinichi Fukuda</p>
+                        </div>
+                    </div>
+                    <div class="anime-card" style="width: 15rem;">
+                        <img src="./img/witch-watch.png" class="card-img-top  anime-img" alt="imagen de witch watch">
+                        <div class="card-body card-info">
+                            <h5 class="card-title">Witch Watch</h5>
+                            <p class="card-text">Genero: Comedia</p>
+                            <p class="card-text">Episodios: 23(en emisión)</p>
+                            <p class="card-text">Autor: Kenta Shinohara</p>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <!--animes recomendado por amigos-->
+                <div class="col-5 categorias">
+                    <h3>
+                        Friends suggestions
+                    </h3>
+                </div>
+                <section class="row cards-row">
                     
                     <div class="anime-card" style="width: 15rem;">
                         <img src="./img/dandadan.jpg" class="card-img-top  anime-img" alt="imagen de Dandadan">

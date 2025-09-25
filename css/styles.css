@@ -69,6 +69,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  color: rgb(241, 76, 192);
+}
+* body main .categorias {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
   color: rgb(241, 76, 192);
 }
 * body main {
@@ -85,17 +92,21 @@
 * body main {
   /*edicion de las tarjetas*/
 }
-* body main .anime-card {
+* body main .cards-row {
+  display: flex;
+  justify-content: center;
+}
+* body main .cards-row .anime-card {
   background-color: white;
   margin: 20px;
   border-radius: 5%;
   padding: 0;
   max-width: 100%;
 }
-* body main .card-info {
+* body main .cards-row .anime-card .card-info {
   padding: 10px;
 }
-* body main .anime-img {
+* body main .cards-row .anime-card .anime-img {
   border-radius: 10px;
 }
 * body main {
