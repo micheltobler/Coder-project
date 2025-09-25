@@ -4,10 +4,15 @@
 .header {
   color: white;
   background-color: rgb(240, 135, 210);
+  padding: 10px 10px;
+  max-width: 100%;
+}
+.header .division-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+}
+.header {
   /*seccion derecha de la pantalla donde va el nav, avatar y boton de watch party*/
 }
 .header .interactive-header {
@@ -85,6 +90,7 @@
   margin: 20px;
   border-radius: 5%;
   padding: 0;
+  max-width: 100%;
 }
 * body main .card-info {
   padding: 10px;
@@ -99,6 +105,7 @@
   background-color: rgb(216, 119, 187);
 }
 * body main .friend {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,6 +127,7 @@
 }
 * body main .friend-info p {
   margin: 0;
+  max-width: 100%;
 }
 * body main .online {
   background-color: greenyellow;
@@ -142,8 +150,8 @@
   border-radius: 50px;
   padding: 10px;
 }
-* body main .img-button {
-  width: 30px;
+* body main .button-chat .img-button {
+  width: 25px;
 }
 * body main .boton-amigos {
   display: flex;

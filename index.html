@@ -15,29 +15,34 @@
 
 <body>
 <!--Header con logo de la pagina, y un icono de avatar-->
-    <header class="header">
-        <h1 class="logo">
-            Aniking
-        </h1>
-        <div class="interactive-header">
-            <button class="watch-party">
-                Make a watch party
+    <header class="container-fluid header">
+        <div class="col-12 division-header">
+            <h1 class="logo">
+                Aniking
+            </h1>
+
+            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#interactiveMenu" aria-controls="interactiveMenu" aria-expanded="false" aria-label="Toggle menu">
+                ☰
             </button>
-            <nav>
-                <h2>
-                    New entries
-                </h2>
-                <span class="barra-intevalo"></span>
-                <h2>
-                    My animes
-                </h2>
-                <span class="barra-intevalo"></span>
-                <h2>
-                    Friends suggestions
-                </h2>
-            </nav>
-            <div class="avatar"></div>
+
+            <div class="collapse d-md-block " id="interactiveMenu">
+                <div class="interactive-header">
+                    <button class="watch-party">
+                        Make a watch party
+                    </button>
+                    <nav>
+                        <h2>New entries</h2>
+                        <span class="barra-intevalo"></span>
+                        <h2>My animes</h2>
+                        <span class="barra-intevalo"></span>
+                        <h2>Friends suggestions</h2>
+                    </nav>
+                    <div class="avatar"></div>
+                </div>
+            </div>
+
         </div>
+
     </header>
 
     
@@ -152,7 +157,7 @@
 
 
         <!--segunda division donde va a estar la lista de contactos-->
-            <section class="friend-list col-3">
+            <section class="friend-list d-none col-md-3 d-md-block">
                 <section>
                         <h2 class="list-title">
                             Friends list
@@ -163,7 +168,7 @@
                             <div class="friend">
                                 <div class="friend-info">
                                     <div class="friend-icon"></div>
-                                    <p>
+                                    <p class="d-none d-lg-block">
                                         Amigo#0000
                                     </p>
                                     <div class="online"></div>
@@ -180,7 +185,7 @@
                             <div class="friend">
                                 <div class="friend-info">
                                     <div class="friend-icon"></div>
-                                    <p>
+                                    <p class="d-none d-lg-block">
                                         Amigo#0000
                                     </p>
                                     <div class="online"></div>
@@ -197,7 +202,7 @@
                             <div class="friend">
                                 <div class="friend-info">
                                     <div class="friend-icon"></div>
-                                    <p>
+                                    <p class="d-none d-lg-block">
                                         Amigo#0000
                                     </p>
                                     <div class="online"></div>

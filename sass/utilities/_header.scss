@@ -5,10 +5,15 @@
 .header{
     color: white;
     background-color: $primary-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 10px;
+    max-width: 100%;
+
+
+    .division-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     /*seccion derecha de la pantalla donde va el nav, avatar y boton de watch party*/
 
