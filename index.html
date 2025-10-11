@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime list and view</title>
+    <meta name="description" content="Una pagina dedicada a catalogar y calificar animes nuevos y clasicos.">
+    <title>Aniking - anime lists maker</title>
+    <link rel="icon" href="./img/favicon.png" type="image">
     <!--Conexión a bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caprasimo">
@@ -27,17 +29,17 @@
 
             <div class="collapse d-md-block " id="interactiveMenu">
                 <div class="interactive-header">
-                    <button class="watch-party">
+                    <button class="watch-party d-none d-md-block">
                         Make a watch party
                     </button>
-                    <nav>
+                    <nav class="d-flex-col">
                         <h2><a href="#mis-animes">Mis animes</a></h2>
                         <span class="barra-intevalo"></span>
                         <h2><a href="#nuevos-animes">Nuevos animes</a></h2>
                         <span class="barra-intevalo"></span>
                         <h2><a href="#friend-suggestions">Sugerencias de amigos</a></h2>
                     </nav>
-                    <div class="avatar"></div>
+                    <div class="d-none d-md-block avatar"></div>
                 </div>
             </div>
 
@@ -56,7 +58,7 @@
                             Mis Animes
                         </h3>
                     </div>
-                    <form class="col-3 d-flex" role="search">
+                    <form class="col-3 d-none d-md-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                         <button class="btn btn-outline-success color-font" type="submit">Search</button>
                     </form>
