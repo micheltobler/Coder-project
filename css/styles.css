@@ -32,8 +32,12 @@
 .header .interactive-header nav {
   display: flex;
   align-items: end;
+  justify-content: center;
   padding: 10px;
   gap: 10px;
+}
+.header .interactive-header nav span {
+  font-size: 1.5rem;
 }
 .header .interactive-header nav h2 {
   font-size: 20px;
@@ -58,6 +62,11 @@
   border-radius: 10px;
 }
 
+/*@media screen and (max-width: 768px) {  
+    .header .interactive-header .barra-intevalo span{
+        display: none;
+    }
+}*/
 * {
   margin: 0;
   padding: 0;

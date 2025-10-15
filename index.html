@@ -17,35 +17,37 @@
 
 <body>
 <!--Header con logo de la pagina, y un icono de avatar-->
-    <header class="container-fluid header">
-        <div class="col-12 division-header">
-            <h1 class="logo">
-                Aniking
-            </h1>
+<header class="container-fluid header py-3">
+  <div class="row align-items-center ">
+    <div class="col-10 col-md-3">
+      <h1 class="logo m-0">Aniking</h1>
+    </div>
 
-            <button class="btn btn-primary d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#interactiveMenu" aria-controls="interactiveMenu" aria-expanded="false" aria-label="Toggle menu">
-                ☰
-            </button>
+    <div class="col-2 d-md-none text-end">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#interactiveMenu" aria-controls="interactiveMenu" aria-expanded="false" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+  </div>
 
-            <div class="collapse d-md-block " id="interactiveMenu">
-                <div class="interactive-header">
-                    <button class="watch-party d-none d-md-block">
-                        Make a watch party
-                    </button>
-                    <nav class="d-flex-col">
-                        <h2><a href="#mis-animes">Mis animes</a></h2>
-                        <span class="barra-intevalo"></span>
-                        <h2><a href="#nuevos-animes">Nuevos animes</a></h2>
-                        <span class="barra-intevalo"></span>
-                        <h2><a href="#friend-suggestions">Sugerencias de amigos</a></h2>
-                    </nav>
-                    <div class="d-none d-md-block avatar"></div>
-                </div>
-            </div>
+  <div class="collapse col-12 d-md-block mt-3 mt-md-0" id="interactiveMenu">
+    <div class="interactive-header d-md-flex align-items-center justify-content-end">
+      <button class="watch-party d-none d-md-block">
+        Make a watch party
+      </button>
 
-        </div>
+      <nav class="d-flex flex-column flex-md-row text-center">
+        <h2><a href="#mis-animes">Mis animes</a></h2>
+        <span class="barra-intervalo">│</span>
+        <h2><a href="#nuevos-animes">Nuevos animes</a></h2>
+        <span class="barra-intervalo">│</span>
+        <h2><a href="#friend-suggestions">Sugerencias de amigos</a></h2>
+      </nav>
+    </div>
 
-    </header>
+    <div class="d-none d-md-block avatar"></div>
+  </div>
+</header>
 
     
     <main class="container-fluid">
